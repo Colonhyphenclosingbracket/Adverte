@@ -109,32 +109,41 @@ body{
 .TicketSlotter{
     display: flex;
     position: relative;
-    width: 200vw;
+    width: 100vw;
     height: 25vh;
     flex-direction: row;
 }
 .IntroductionTicket{
     display: flex;
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 25vh;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: aqua;   
+    background-color: teal;   
+    z-index: 8;
 }
 .IntroductionSlotter{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 100vw;
     height: 25vh;
-    background-color: azure;
+    background-color: darkcyan;
+    z-index: 7;
 }
-.TicketSlotter:hover{
-    margin-left: -100vw;
+.Z1:hover .IntroductionTicket{
+    display: none;
+}
+.Z1:hover .IntroductionSlotter{
+    display: flex;
+}
+.TicketSlotter a{
+    color:black;
+    text-decoration: none;
 }
 .Advert{
     display: flex;
@@ -154,7 +163,7 @@ body{
     text-align: center;
     width: 100vw;
     height: 50vh;
-    background-color: turquoise;
+    background-color: seagreen;
 }
 .ProductUse{
     display: flex;
@@ -162,19 +171,25 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: cyan;
+    background-color: darkturquoise;
     width: 100vw;
     height: 100%;
 }
 .AdvertiserSlot{
-    display: flex;
+    display: none;
     position: relative;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: slategray;
     width: 100vw;
     height: 100%;
+}
+.Z2:hover .ProductUse{
+    display: none;
+}
+.Z2:hover .AdvertiserSlot{
+    display: flex;
 }
 .Saler{
     display: flex;
@@ -195,6 +210,7 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background-color: white;
     width: 50vw;
 }
 .ProductName a{
@@ -213,7 +229,7 @@ body{
     position: relative;
     flex-direction: row;
     width: 100vw;
-    height: 50vh;
+    height: fit-content;
     background-color: burlywood;
 }
 .Online{
