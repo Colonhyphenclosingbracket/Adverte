@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    color: black;
+}
+.ForeBase{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+.BackBase{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    z-index: 1;
+}
+.Header{
+    display: flex;
+    position: fixed;
+    background-color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 100;
+}
+.OPT{
+    display: flex;
+    width: 20vw;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.OPT a{
+    color: black;
+    text-decoration: none;
+}
+.NAV:hover{
+    background-color: cornflowerblue;
+}
+.LOGO{
+    padding-left: 5vw;
+}
+.Content{
+    display: flex;
+    position: relative;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 2000px;
+    background-color: azure;
+    flex-direction: column;
+}
+.ImageHolderHeader{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: deepskyblue;
+}
+.ImageHolder{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-color: darkcyan;
+    flex-direction: row;
+    justify-content: center;
+}
+.Image{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.IntroductionHeader{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: skyblue;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Introduction{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: skyblue;
+}
+.TicketSlotter{
+    display: flex;
+    position: relative;
+    width: 200vw;
+    height: 25vh;
+    flex-direction: row;
+}
+.IntroductionTicket{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: aqua;   
+}
+.IntroductionSlotter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 25vh;
+    background-color: azure;
+}
+.TicketSlotter:hover{
+    margin-left: -100vw;
+}
+.Advert{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 10vh;
+}
+.Teaser{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: turquoise;
+}
+.ProductUse{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: cyan;
+    width: 100vw;
+    height: 100%;
+}
+.AdvertiserSlot{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100%;
+}
+.Saler{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    background-color: white;
+}
+.ProductImage{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+.ProductName{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50vw;
+}
+.ProductName a{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+.ImageMain{
+    display: flex;
+    position: relative;
+    width: 50vw;
+    height: auto;
+}
+.Software{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+    background-color: burlywood;
+}
+.Online{
+    display: flex;
+    position: relative;
+    width: 50vw;
+    height: 25vh;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: tomato;
+}
+.Online a{
+    color: black;
+    text-decoration: none;
+}
+.Offline{
+    display: flex;
+    position: relative;
+    width: 50vw;
+    height: 25vh;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: darkcyan;
+}
+.Footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-color: cadetblue;
+}
+.Contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 25vh;
+}
+.Credits{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+/*THE OTHER PART - MAIN*/
+.Holder{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+.Introductor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 35vh;
+    background-color: deepskyblue;
+}
+.Searcher{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 25vh;
+    justify-content: space-around;
+    background-color: deepskyblue;
+}
+.Searcher input{
+    display: flex;
+    width: 50vw;
+    height: 100px;
+    flex-wrap: wrap;
+}
