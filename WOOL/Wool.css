@@ -314,15 +314,46 @@ body{
     height: 100px;
     flex-wrap: wrap;
 }
+.SecondOption{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    text-align: center;
+    background-color: deepskyblue;
+}
+.FileReader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 25vh;
+    background-color: deepskyblue;
+}
+.FileReader input{
+    display: flex;
+    width: 50vw;
+    height: 15vh;
+}
 .Results{
     display: flex;
     width: 100vw;
     height: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-.Output{
+.Preview{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100vw;
     height: 10vh;
+    background-color: teal;
 }
 /*THIS IS THE SIGNER*/
 .SignHolder{
